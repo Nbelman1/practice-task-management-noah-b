@@ -12,14 +12,14 @@ const TaskDetail = ({ tasks }) => {
 
     const handleIds = (id) => {
         if (id > tasks.length || id == 0) {
-            return "Invalid task, please try again.";
+            return <h3>Invalid task, please try again.</h3>;
         } else if (!id) {
-            return "Unknown task, please try again.";
+            return <h3>Unknown task, please try again.</h3>;
         } else if (id) {
             return (
                 <div>
-                    <h3>{fetchTask.title}</h3>
-                    <p><strong>Description</strong>: <br /><br />{fetchTask.description}</p>
+                    <h3 className="task-title">Task: {fetchTask.title}</h3>
+                    <p className="task-description"><strong>Description</strong>: <br /><br />{fetchTask.description}</p>
                 </div>
             )
         }
@@ -27,8 +27,8 @@ const TaskDetail = ({ tasks }) => {
 
     // render task details
     return (
-        <div>
-            <h3>Task: {handleIds(id)}</h3>
+        <div className="task-details-container">
+            {handleIds(id)}
         </div>
     );
 };

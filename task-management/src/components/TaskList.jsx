@@ -12,7 +12,7 @@ const TaskList = ({ tasks }) => {
     
     // render task links
     return (
-        <div>
+        <div className="task-list">
             <h2>Tasks</h2>
             <ul>
                 {renderTasks}

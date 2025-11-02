@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: midnightblue;
+    background-color: gainsboro;
+}
+
+.task-details-container {
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 25px;
+    border-color: saddlebrown;
+}
+
+.task-list, .task-title {
+    text-align: center;
+}
+
+.task-list {
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.task-description {
+    margin-left: 5%;
+    margin-right: 5%;
+}
