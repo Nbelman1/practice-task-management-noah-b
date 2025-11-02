@@ -1,6 +1,6 @@
 # practice-task-management-noah-b
 
-Most of my work is on the following files:  
+Open task-management/ to see my work on the following files:  
 
 * src/App.jsx  
 * src/App.css  
